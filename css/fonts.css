@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'brawlerregular';
+    src: url('../fonts/brawler.eot');
+    src: url('../fonts/brawler.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brawler.woff2') format('woff2'),
+         url('../fonts/brawler.woff') format('woff'),
+         url('../fonts/brawler.ttf') format('truetype'),
+         url('../fonts/brawler.svg#brawlerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+
+@font-face {
+    font-family: 'entyporegular';
+    src: url('../fonts/Entypo-webfont.eot');
+    src: url('../fonts/Entypo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Entypo-webfont.woff') format('woff'),
+         url('../fonts/Entypo-webfont.ttf') format('truetype'),
+         url('../fonts/Entypo-webfont.svg#entyporegular') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+

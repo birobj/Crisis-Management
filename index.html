@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Advanced Concepts for Law Enforcement Management</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="jquery.mobile/demos/css/themes/default/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="shortcut icon" href="../favicon.ico" />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fittext.js"></script>
+<script type="text/javascript" src="jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/fastclick.js"></script>
+<script type="text/javascript" src="js/retina.js"></script>
+<script src="phonegap.js"></script>
+<script>
+$(function() {
+    FastClick.attach(document.body);
+});
+</script>
+<script>
+// Wait for device API libraries to load
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+		
+    }
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Now safe to use device APIs
+    }
+
+</script>
+</head>
+
+<body onLoad="onLoad()">
+<!--PAGE ONE-->
+<div data-role="page" id="menupage">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+            <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    <nav class="navbar">
+    <ul>
+        <li><h4>PRE-EVENT PHASE</h4></li>
+        <li><a href="#pephase">Pre-Event Phase</a></li>
+        <li><a href="#peclist">Pre-Event Checklist</a></li>
+        <li><h4>IMMEDIATE RESPONSE PHASE</h4></li>
+        <li><a href="#imm-resp-check">Immediate Response Checklist</a></li>
+        <li><a href="#stabilize">Stabilize the Scene!</a></li>
+        <li><h4>DELIBERATE PLANNING PHASE</h4></li>
+        <li><a href="#del-plan-phase">Deliberate Planning Phase</a></li>
+        <li><a href="#strat-dev-check">Strategy Development Checklist</a></li>
+        <li><a href="#concurrent-plan">Concurrent Planning Considerations</a></li>
+        <li><h4>RESOLUTION PHASE</h4></li>
+        <li><a href="#res-phase-check">Resolution Checklist</a></li>
+        <li><a href="#after-action-check">After Action Checklist</a></li>
+        <li><h4>COMMAND POST/ EMERGENCY OP. CENTER</h4></li>
+        <li><a href="#command-post">Command Group</a></li>
+        <li><a href="#oper-group">Operations Group</a></li>
+        <li><a href="#oper-supp-group">Operations Support Group</a></li>
+        <li><h4>Tactical</h4></li>
+        <li><a href="#tactical">Utilization of SWAT</a></li>
+        <li><a href="#toc">Tactical Operations Center (TOC)</a></li>
+        <li><a href="#analysis-tr">Analysis for a Tactical Response</a></li>
+        <li><a href="#eap">Emergency Assault Plan</a></li>
+        <li><a href="#dap">Deliberate Assault Plan</a></li>
+        <li><a href="#tact-devices">Tactical Devices</a></li>
+        <li><h4>BOMB THREATS</h4></li>
+        <li><a href="#bomb-threats">Bomb Threat Checklist</a></li>
+        <li><h4>TRANSPORTATION CRASH/ INCIDENT</h4></li>
+        <li><a href="#trans-crash">Transportation Crash/Incident</a></li>
+        <li><h4>MISSING CHILD/ CHILD ABDUCTION CHECKLIST</h4></li>
+        <li><a href="#miss-child">Missing Child/Child Abduction Checklist</a></li>        
+        <li><h4>OFFICER INVOLVED SHOOTING INCIDENTS</h4></li>
+        <li><a href="#ois">Officer Involved Shooting Incidents</a></li>
+        <li><h4>Resource List</h4></li>
+        <li><a href="#eps">Emergency Police Services</a></li>
+        <li><a href="#aviation-res">Aviation Resources</a></li>
+        <li><a href="#canines">Canines</a></li>
+        <li><a href="#dispatch-tele">Dispatchers/Telecommunicators</a></li>
+        <li><a href="#swat">SWAT and Bob Teams</a></li>
+        <li><a href="#womd">Weapons of Mass Destruction</a></li>
+        <li><a href="#air-amb">Air Ambulances</a></li>
+        <li><h4>ACRONYMS</h4></li>
+        <li><a href="#acronyms">Acronyms</a></li>
+    </ul>
+    </nav>
+    </div>
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            <p>Training &amp; Standards Bureau</p>
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE ONE-->
+
+<!-- PAGE PRE-EVENT PHASE -->
+<div data-role="page" id="pephase">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Pre-Event Phase</h1>
+        <p>To ensure the development and maintenance of a competent crisis response apparatus, law enforcement agencies must take certain steps as a matter of routine operations before a critical incident occurs. The benefits of such preparation will be evident during the unexpected incident or planned events such as search warrant and arrest operations.</p>
+        <p>&nbsp;</p>
+        <h2>Crisis Response Plan</h2>
+        <p>Agencies must have a current Crisis Response Plan (CRP) which is a set of pre-established procedures which informs and guides actions during a crisis situation. Supplemental information provides additional details to support crisis site-specific or act-specific incidents. The CRP must be periodically updated (the FBI suggests every three years) and posted to all applicable personnel.</p>
+        <p>&nbsp;</p>
+        <h2>Crisis Management Training</h2>
+        <p>Critical to maintenance of the CRP is the practice of its procedures. Planned exercises of all the components and activities dictated in the plan reinforce crisis response procedure and identify areas for improvement. Tabletop Exercises, Command Post Exercises, and Full Scale Exercises are some vehicles for this training. Frequent participation prepares the leadership and crisis staff for actual crisis management.</p>
+        <p>&nbsp;</p>
+        <p>In addition, Command Post (CP) personnel and office staff must be trained and practiced in its use. The training should include regularly scheduled opportunities to practice Command Post set up, information flow in the CP, the use of appropriate information management systems, and the use of specialized software and resources that might be used in a CP environment.</p>
+        <p>&nbsp;</p>
+        <h2>Crisis Management Coordinator</h2>
+        <p>The Crisis Management Coordinator (CMC) is the central figure in preparation and execution for critical incidents, special events and exercises. The CMC should be a sworn law enforcement officer and supervisor who understands investigative operations and has daily access to other supervisors and executive management.</p>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE PRE-EVENT CHECKLIST -->
+<div data-role="page" id="peclist">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Pre-Event Checklist</h1>
+        <ul>
+            <li>Maintain a current Crisis Response Plan
+            <ul><li>Distribute this to agency personnel</li></ul></li>
+            <li>Identify and survey critical facilities</li>
+            <li>Develop contingency plans for major crises by incident type or location
+            <ul><li>These plans should be annexes to the CRP</li></ul></li>
+            <li>Coordinate protocols with local, state, and federal agencies
+            <ul><li>Coordinate state resources with the Wisconsin Emergency Response Plan through WEM, especially ESF 13:
+            <li>Public Safety and Security Catastrophic Incident Annex</li>
+            <li>Terrorism Incident – Law Enforcement and Investigation Annex</li></ul></li></li>
+            <li>Prepare Memoranda of Understanding (MOU) if needed</li>
+            <li>Identify, train, and equip a Crisis Management Team (CMT) and/or personnel responsible for crisis management</li>
+            <li>Train personnel in command post operations and information management</li>
+            <li>Plan for logistical support</li>
+            <li>Test plans and personnel through drills and exercises
+            <ul><li>Single unit drills</li></ul></li>
+            <li>Drill coordinating activities across response units and interagency partners
+            <ul><li>Tabletop exercises</li>
+            <li>Command Post exercises</li>
+            <li>Full Scale exercises</li></ul></li>
+         </ul>
+Adjust plans as required and brief changes.
+
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE IMMEDIATE RESPONSE CHECKLIST -->
+<div data-role="page" id="imm-resp-check">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Immediate Response Checklist</h1>
+        <p>This phase of a crisis may occur in escalating steps beginning with the initial notification to the agency. It marks a commitment to respond for assessment and management of a crisis situation.</p>
+        <p>&nbsp;</p>
+		<p>The Crisis Management Team (CMT) should consist of the CMC and personnel from the Operations Group of the Command Post (CP), including coordinators of the following units:</p>
+        <p>&nbsp;</p>
+        <ul>
+        <li>Command Post Operations Group
+        <ul><li>Intake</li>
+        <li>Investigations</li>
+        <li>Intelligence</li></ul></li>
+        <li>Tactical (SWAT)</li>
+        <li>Negotiations</li>
+        <li>Technical</li>
+        <li>Surveillance</li>
+        <li>Evidence Response</li>
+        <li>WMD/HazMat Response</li>
+        <li>Bomb Technicians</li>
+		</ul>
+        <p>&nbsp;</p>
+        <p>An early decision to activate the Command Post or Emergency Operations Center (CP/EOC) will positively affect command, control, and communications at this crucial stage.</p>
+        <p>&nbsp;</p>
+        <ul>
+        <li>Determine if crisis involves potential or actual WMD (chemical, biological, radiological, nuclear or high explosive) or Hazardous Material</li>
+        <li>Determine if your CRP has an annex, contingency plan, or Standard Operating Procedure (SOP) for this situation. If so, use it</li>
+        <li>If appropriate, advise personnel to respond to a designated staging area for initial assessment and assignment</li>
+        <li>If crisis involves WMD or HazMat, ensure a risk assessment is completed prior to deploying assets to the scene. Ensure proper Personal Protective Equipment (PPE) is donned before deploying to the scene</li>
+        <li>Brief and deploy investigative and field response teams from the predesignated staging area</li>
+        <li>Alert CP/EOC personnel to respond and activate CP/EOC operations at designated location
+		<ul><li>Event log</li>
+		<li>Investigation management or lead tracking software</li>
+		<li>CP supplies such as forms, flip charts, etc.</li></ul></li>
+        <p>&nbsp;</p>
+        <p>Specific incident planning checklists can be found later in this book for the following critical incident scenarios:</p>
+        <ul>
+        <li>Tactical/SWAT</li>
+        <li>Bomb Threats</li>
+        <li>WMD Checklist</li>
+        <li>Transportation Crash/Incident</li>	
+        <li>Missing/Abducted Child</li>
+        <li>Officer-Involved Shooting</li></ul>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE STABILIZE THE SCENE -->
+<div data-role="page" id="stabilize">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Stabilize the Scene!</h1>
+        <ul>
+        <li>Coordinate with other local/state law enforcement, fire, and emergency medical agencies on scene</li>
+		<li>The first priority is Life Safety Operations by first responders to provide emergency medical services, rescue survivors, extinguish fires, and mitigate hazardous materials contamination</li>
+		<li>Identify and coordinate medical assistance for response personnel, if required</li>
+		<li>Develop a perimeter plan
+        <ul><li>Determine how many perimeters are required for ongoing operations</li>
+        <li>Include a turnover plan from current inner perimeter personnel to specialized responders (SWAT, investigators, evidence techs, etc.)</li>
+        <li>Develop specific instructions on how to isolate and contain the crisis site and who will staff the perimeters</li>
+        <li>Include contingency plans for situations the perimeter personnel are likely to encounter (e.g., media, crowds, victim assistance, sympathizers trying to reach crisis site, rerouted traffic, etc)</li>
+        <li>Include a communications plan</li>
+        <li>Ensure all personnel have reviewed agency deadly force policy</li>
+        <li>Determine the staffing schedule</li></ul></li>
+        <li>Notify other agencies as necessary (state, local, and federal law enforcement, elected and appointed public officials, non law enforcement responders, emergency managers)</li>
+        <li>Based on an initial assessment
+        <ul><li>Who has primary jurisdiction? Local law enforcement, DNR, FBI, FAA?</li>
+        <li>Will another agency assume control at a future point?</li>
+        <li>Where is the Incident Command/Unified Command (IC/UC) located?</li>
+        <li>Where will the CP be located if needed?</li>
+        <li>If WMD or HazMat are a factor, are the CP and other staging areas outside of the danger zone?</li></ul></li>
+        <li>Establish a chain of command. Who is the IC?  Has this been communicated to all personnel?</li>
+        <li>Identify and deploy appropriate personnel (coordinators, supervisors, and/or investigators as appropriate) to the CP, if one has been established</li>
+        <li>Determine the goals and objectives for successful crisis resolution
+        <ul><li>Communicate these goals and objectives to all responding personnel</li></ul></li>
+        <li>As permanent CP/EOC personnel arrive, brief and integrate them into their respective units. Ensure the CP/EOC is functioning properly</li>
+        <li>If a state/federal law enforcement agency will assume control, coordinate with those partners and determine what that agency is assuming control of, when, and develop a plan to transition control of the investigation and/or crime scene forensic processing
+        <ul><li>Should WEM be notified? Would WEM’s State Emergency Operations Center (SEOC) be helpful?</li></ul></li>
+        <li>Conduct a site survey if safe and practicable
+        <li>Display crisis site maps, diagrams, photos, satellite images and other visual products in the CP/EOC
+        <li>Where appropriate, ensure specialty teams and crisis management personnel have coordinated with local/state/federal law enforcement partners already on scene
+        <li>If appropriate, develop an Emergency Assault Plan (EAP). The EAP should be available as soon as practical after SWAT’s arrival at the crisis site. The plan must
+        <ul><li>Reflect the overall strategy of the law enforcement Incident Commander (IC)</li>
+        <li>Be risk effective</li>
+        <li>Be absolute in resolving the crisis</li>
+        <li>Be legally and ethically acceptable</li>
+        <li>Address emergency situations (i.e. food deliveries, hostage releases, surrenders)</li>
+        <li>Begin planning for reasonable and expected contingencies</li>
+        <li>Provide adequate firefighting and emergency medical services if needed</li>
+        <li>Develop a negotiations plan</li>
+        <li>Review deadly force policy for personnel</li>
+        <li>Contain adequate command and control measures</li>
+        <li>Be briefed to all participants and rehearsed</li></ul></li>
+        <li>Is a Negotiations Operations Center (NOC) required?</li>
+        <li>Is a Tactical Operations Center (TOC) required?</li>
+        <li>Have the TOC and NOC exchanged liaisons and are they in communication with each other?</li>
+        <li>Are you in communication with the TOC and NOC?</li>
+        <li>Move to the CP/EOC as soon as it is operational so you have access to investigation, intelligence, field deployed specialty units, databases, communications, and other resources</li>
+        <li>Assign liaison and/or supervisors/managers to provide management oversight, maintain information sharing links, and obtain situational awareness</li>
+        <li>If you are assuming control from another IC, do not assume control until
+        <ul><li>All parties are certain what you are assuming control of and what you are not assuming control of (for example, crisis operations versus mitigation or response &amp; recovery operations)</li>
+		<li>Direct communications have been firmly established with the TOC, NOC, CP, EOC or other command and control centers</li></ul></li>
+        <li>Have all facets of the transition plan been implemented</li>
+        <li>Transition control of the situation when ready and appropriate</li>
+        <li>Document details of transition of control in CP/EOC event log</li>
+        <li>Update CP/EOC crisis site images to reflect changes in posture or deployment of resources</li>
+        <li>Coordinate intelligence, investigative, and other units for the debriefing of witnesses, victims, confidential human sources, first responders, and others</li>
+        <li>Identify intelligence requirements and needs</li>
+        <li>Evaluate your immediate response posture. At this point you should have, as needed
+        <ul><li>The crisis site contained with an inner perimeter</li>
+        <li>An outer perimeter to control access and permit unrestricted operations within the inner perimeter</li>
+        <li>An Emergency Assault Plan (EAP)</li>
+        <li>SWAT team in position with sniper/observer elements deployed</li>
+        <li>Explosive contingency procedures</li>
+        <li>Operational TOC and NOC with liaisons exchanged</li>
+        <li>Communications with all forward elements</li>
+        <li>A secure, functioning CP/EOC</li>
+        <li>Provide security for CP/EOC, TOC, NOC, IC/UC, and staging areas</li>
+        <li>A system to be used with other agencies codes, passwords, colors, to enhance officer safety, operational security, and access control</li>
+        <li>Briefed the deadly force policy</li></ul></li>
+        <li>Prepare a briefing for news media, elected officials, or other stakeholders as necessary</li>
+		<li>Ensure communications are established with EOC, as appropriate</li>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE DELIBERATE PLANNING PHASE -->
+<div data-role="page" id="del-plan-phase">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Deliberate Planning Phase</h1>
+        <ul>
+        <li>Develop a resolution strategy and brief key subordinates</li>
+        <li>Review and approve the Deliberate Assault Plan (DAP)</li>
+        <li>Ensure the Deadly Force Policy is briefed to appropriate personnel
+        <ul><li>Document the Deadly Force Policy briefing in the Operations Order or Incident Action Plan</li>
+		<li>Include the Deadly Force Policy in the Operations Order or Incident Action Plan</li></ul></li>
+        <li>Consult with component leaders so they understand the commander’s strategy and intent, identify options and courses of action, identify personnel and logistics requirements to achieve commander’s goals</li>
+        <li>Evaluate existing assets and identify shortfalls over the short and long term</li>
+        <li>Ensure all intelligence gathering entities are operating properly</li>
+        <li>Coordinate with component leaders and establish Essential Elements of Information (EEI) requirements</li>
+        <li>Advise the Intelligence and Investigative Units of EEI priorities</li>
+        <li>Update maps, sketches, ground and aerial photos of crisis site
+        <ul><li>Confirm perimeter data, evaluate and adjust boundaries, if necessary</li></ul></li>
+        <li>Define CP/EOC Information Flow process and provide this information to CP/EOC personnel
+		<ul><li>Document this information in subsequent Operations Order or Incident Action Plan for the incident</li></ul></li>
+		<li>Implement steps to handle a protracted situation
+        <ul><li>Roster of all deployed personnel maintained in CP/EOC</li>
+        <li>Design shifts with procedures to overlap key personnel for briefings and continuity</li>
+        <li>Establish a locator and recall system for emergency circumstances</li>
+        <li>Arrange for sanitation, food, lodging, and transportation services</li>
+        <li>Keep the command group fresh. DON’T ASSUME THE CRISIS WILL BE OF LIMITED DURATION. PLAN FOR EXTENDED OPERATIONS FROM THE ONSET.</li></ul></li>
+        <li>Coordinate with federal/state/local agencies to provide additional resources</li>
+        <li>If the crisis involves potential or actual WMD, continue planning for personnel safety and begin coordination with response and recovery agencies for recovery, mitigation, and consequence management planning (WEM, DNR at the state level; EPA, FEMA, DOE at the federal level)</li>
+        <li>Ensure adequate emergency and sick call medical coverage for personnel</li>
+        <li>Establish a CP/EOC briefing schedule by the Intelligence and Investigation Units to ensure all units are informed of current data
+        <li>Engage the media
+        <ul><li>Develop a comprehensive and coordinated media strategy, utilizing a Joint Information Center (JIC), if necessary</li>
+        <li>Coordinate development of media strategy with other involved parties</li>
+        <li>Coordinate media strategy with all agencies involved in the crisis</li>
+        <li>Identify a media spokesperson (this should not be the Incident Commander (IC)</li>
+        <li>Identify a media staging area/briefing location and set a briefing schedule</li>
+        <li>Determine if behavioral analysis input adds value to the public message to open dialogue with the subjects and/or their family, friends, or associates</li></ul></li>
+        <li>Determine if a badging/identification system is necessary for CP/EOC security</li>
+        <li>Assess the ability to document all activities (logs, files, investigative reports, photographs, video)</li>
+        <li>Maintain a presence in the CP/EOC; don’t become isolated from its activities</li>
+        <li>The IC should handle strategic level issues. Delegate to the operations and support coordinators as required for operational and tactical level implementation of the IC strategy, goals, and objectives</li>
+        <li>If you depart CP/EOC, delegate the authority to act on your behalf to a deputy and announce this to the CP/EOC</li>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE STRATEGY DEVELOPMENT CHECKLIST -->
+<div data-role="page" id="strat-dev-check">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Strategy Development Checklist</h1>
+        <ul>
+        <li>Define and prioritize your crisis resolution goals</li>
+        <li>Analyze
+        <ul><li>Nature of violation</li>
+        <li>Background of subject(s)</li>
+        <li>Threat to officer(s), victim(s), third parties, and environment</li>
+        <li>Negotiation potential, if applicable</li>
+        <li>Existing agency policy</li>
+        <li>Risk effectiveness of available options</li>
+        <li>Acceptability of available options</li></ul></li>
+        <li>Consult with members of command group (including supporting agency commanders)</li>
+        <li>Advise all CM team members of the strategy</li>
+        <li>Determine the process(es) to accomplish your strategy
+        <ul><li>Rely on past experience</li>
+        <li>Seek input from component coordinators</li>
+        <li>Determine risk and acceptability</li></ul></li>
+        <li>Work the plan
+        <ul><li>Define role of command group</li>
+        <li>Allow CP/EOC/TOC decision making process to operate</li>
+        <li>Monitor progress, adhere to time line</li>
+        <li>Provide guidance when necessary</li>
+        <li>Make critical decisions and delegate non-critical decisions to others</li></ul></li>
+        <li>Continue contact with supporting command centers (Wisconsin SEOC, etc.). Set briefing schedule</li>
+        <li>Realign strategy as required following the same procedures used to develop the initial strategy</li>
+        <li>Announce your goals, objectives, and strategy to achieve these goals and objectives to the CP/EOC so all personnel understand the desired final end state and their role in achieving it</li>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE CONCURRENT PLANNING CONSIDERATIONS -->
+<div data-role="page" id="concurrent-plan">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Concurrent Planning Considerations</h1>
+        <p>In addition to the immediate investigative, intelligence, interagency, and crisis resolution priorities, it is imperative to give early consideration to planning for long term operations.</p>
+        <p>&nbsp;</p>
+        <ul>
+        <li>Assign personnel to find adequate, secure space/facilities for
+        <ul><li>CP/EOC, TOC, NOC, or Forward CP</li>
+        <li>Media staging area</li>
+        <li>Media briefing area</li>
+        <li>Parking</li>
+        <li>Responder Staging Areas</li>
+        <li>Participating non-investigative personnel from search &amp; rescue, firefighting, HazMat, consequence management, and other non-investigative responders</li>
+        <li>Secure and non-public interview of victims, witnesses, and subjects</li>
+        <li>Family staging areas or reunification centers</li>
+        <li>Helicopter landing zones</li>
+        <li>Victim Assistance Center</li>
+        <li>Workspace for investigators covering leads to avoid overcrowding and noise in the CP/EOC</li>
+        <li>Areas for Employee Assistance Program (EAP) Counselors or Chaplains to meet privately with personnel</li>
+        <li>Equipment storage</li></ul></li>
+        <li>Assign personnel to procure
+        <ul><li>Lodging</li>
+        <li>Food and water</li>
+        <li>Rental vehicles</li>
+        <li>Specialized equipment</li>
+        <li>Operational medical support</li></ul></li>
+        <li>Develop and implement the use of personnel accountability rosters for incoming/outgoing personnel, including temporary duty (TDY) personnel from other stations or agencies
+        <li>Provide security and safety for personnel and facilities; to include
+        <ul><li>Access control</li>
+        <li>Information technology</li>
+        <li>Perimeter security</li>
+        <li>Closed circuit television</li>
+        <li>Badging</li>
+        <li>Classified and unclassified work space</li></ul></li>
+		<li>Consider Temporary Flight Restrictions (TFRs) and coordinate requests for same through the WEM State Duty Officer</li>
+        <li>Begin coordination between Administrative officer and purchasing or contracting authorities for critical and time-sensitive support for special purchases needed to support field crisis operations</li>
+        <li>Identify personnel with multiple coordinator or team duties to deconflict overlap and ensure no important positions or duties are left uncovered
+        <ul><li>Utilize trained backups or request temporary duty support for positions in need of additional personnel to support extended 24/7 operations</li></ul></li>
+        <li>Immediately deploy Electronic Technicians, Information Technology Specialists, and Technically Trained officers to assess immediate and long term operating conditions, facilities, and needs so adequate connectivity is made and not interrupted by the surge of additional personnel, computers, cellular telephones, Blackberries, satellite uplinks, radios, coders, and chargers</li>
+        <li>Ensure there are adequate IT tools, coders, chargers, and personnel capable of repairs to support 24/7 operations</li>
+        <li>In a catastrophic or WMD incident, begin planning for the integration of consequence management (recovery) agencies at the CP/SEOC and crisis site
+        <ul><li>Federal: FEMA, EPA, and DOE</li>
+        <li>State and local: WEM, DNR, Public Health, Transportation, Medical Examiner/Coroner, and/or other state agencies</li>
+        <li>Public Works</li></ul></li>
+        <li>Private sector coordination
+        <li>Determine rules, guidelines, and agreements for disclosure of information and intelligence to non-investigative partners, to include subsequent further dissemination through their own agency channels and by their agency to the media</li>
+        <li>Coordinate with WEM’s State Emergency Operation Center (SEOC) and local EOCs</li>
+        <li>When requesting outside resources, make certain you know <em>the amount of time it will take to identify, approve, and receive those resources</em>
+		<ul><li>When will they be on scene and able to begin operations</li>
+		<li>How will they report, stage, and integrate into existing operations</li></ul></li>
+		<li>Determine if there is, or may be, a need for language services</li>
+        <li>Determine if any of the victims, witnesses, or subjects are foreign nationals and if their Embassy or Diplomatic Mission in the U.S. has to be notified pursuant to consular treaties the U.S. Government has signed</li>
+        <li>Contact Employee Assistance Program Unit through your EAP Coordinator or Chaplain to provide assistance to personnel involved in the response or personnel and their families impacted by a catastrophic incident</li>
+        <li>Identify Briefers for on scene and remote managers</li>
+        <li>Develop a standard format for CP/EOC briefings and Situation Reports (SitReps)</li>
+        <li>Ensure adequate staff to support investigative, intelligence, management, and deployed special mission teams (data entry, radio operators/dispatchers, CP/EOC component administrative assistance, IT tools)</li>
+        <li>Assess operational tempo to determine appropriate staffing for each shift</li>
+        <li>Consider switching from 12 hour shifts to 8 hour shifts as soon as practicable to avoid fatigue</li>
+        <li>Request additional temporary duty senior executives to support long term operations to avoid fatigue</li>
+        <li>In a catastrophic or large scale incident generating national and international media attention, plan for a significant amount of senior executive time and attention being devoted to developing, coordinating, and delivering the public message</li>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE RESOLUTION PHASE-->
+<div data-role="page" id="res-phase-check">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Resolution Phase</h1>
+        <p>This phase represents a continuation of deliberate planning functions:</p>
+        <p>&nbsp;</p>
+        <ul>
+        <li>Control of the crisis site</li>
+        <li>Negotiations</li>
+        <li>Intelligence gathering</li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>With these elements intact, the crisis management team can begin implementation of tactical plans, evidence recovery, or HazMat/WMD operations.</p>
+        <p>&nbsp;</p>
+        <h2>Resolution Checklist</h2>
+        <ul>
+        <li>Avoid the Action Imperative
+        <ul><li>Is it necessary?
+        <ul><li>Is it necessary now?</li></ul></li>
+        <li>Is it risk effective</li>
+        <li>Is it legal and ethical</ul></li></li>
+        <li>Have all reasonable options been exhausted</li>
+        <li>Document efforts to implement these options</li>
+        <li>Obtain authorization for assault from superiors (if necessary)</li>
+        <li>Have SWAT, Negotiators, and Investigators developed an appropriate surrender plan</li>
+        <li>Are the hostage holding areas and prisoner processing facilities ready to commence operations</li>
+        <li>Are evidence technicians prepared for crime scene investigation</li>
+        <li>Conduct liaison with appropriate agencies/offices (Other law enforcement agencies, prosecuting authorities, medical facilities, mayor/politicians, fire and emergency services, media representatives)
+        <ul><li>Contact negotiators to determine latest intelligence or change in circumstances</li>
+        <li>Make final coordination with CP/EOC units</li>
+        <li>Do you still possess the element of surprise</li>
+        <li>Make “hand-off” of operational control to tactical leader and advise personnel of “hand-off”</li>
+        <li>Issue compromise authority to tactical leader</li>
+        <li>Continuously monitor negotiations and other intelligence sources</li>
+        <li>Recall tactical team if situation changes and can be resolved without an assault</li>
+        <li>Are victim witness assets prepared to assist</li>
+        <li>Coordinate and authorize a crisis evacuation plan with tactical team leader for the following categories
+        <ul><li>Hostages</li>
+        <li>Wounded</li>
+        <li>Subject(s)</li>
+        <li>Tactical Team</li></ul></li></ul></li></ul>
+        <p>&nbsp;</p>
+        <p>Following the resolution of a critical incident, it is necessary to maintain control of the crisis site until all elements have completed their work and accounted for all personnel and equipment. Coordination with other agencies before standing down the operation will ensure that all concerns relative to the crisis are met while the area is still under agency control.</p>
+	</div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE AFTER ACTION CHECKLIST -->
+<div data-role="page" id="after-action-check">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>After Action Checklist</h1>
+        <ul><li>Coordinate with other law enforcement agencies who may have concurrent jurisdiction or responsibilities at the crime scene/incident site
+        <li>When the site is secure, allow for a deliberate hand-off between the tactical team and Evidence Technicians</li>
+        <li>Ensure the tactical team(s) has adequate time to perform a review of their actions before departing the site</li>
+        <li>If appropriate, conduct walk-through inspection of crisis site with tactical team leader</li>
+        <li>Conduct a “hot wash” with joint commanders and component coordinators immediately following the resolution of the critical incident</li>
+        <li>Review written records generated by the CP/EOC
+        <ul><li>Resolve conflicting data</li>
+        <li>Document actions</li>
+        <li>Schedule and conduct an after action debrief and supervise the development of an After Action Report (AAR) and share it with appropriate entities</li></ul></li>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE COMMAND POST/EMERGENCY OP CENTER -->
+<div data-role="page" id="command-post">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Command Post/Emergency Op. Center</h1>
+        <p>Command Posts are commonly established to monitor and manage a variety of matters, to include critical incidents, major investigations and/or special events. They may be staffed by a combination of local, state, and federal authorities for any type of investigative matter or event. The Incident Commander (IC) is often the highest-ranking law enforcement officer of the agency with primary jurisdiction, but it can be delegated down to a law enforcement officer as needed.</p>
+        <p>&nbsp;</p>
+        <p>A command post can be utilized when the law enforcement agency is acting alone or when leading a task force, including drug or gang raids, child abductions, or local special events.</p>
+        <p>&nbsp;</p>
+        <p>An Emergency Operations Center (EOC) is utilized when a terrorism, WMD, or significant criminal threat or incident warrants a major cooperative effort. A EOC may be established and staffed in a watch mode in support of significant special events, allowing for rapid expansion to full operational mode should a critical incident occur requiring a full response.</p>
+        <p>&nbsp;</p>
+        <p>Wisconsin Emergency Management (WEM) operates the State Emergency Operations Center (SEOC), which can coordinate and request additional regional or even national assets.</p>
+        <p>&nbsp;</p>
+        <h3>FBI Command Post</h3>
+        <p><img src="css-images/command-post-group.png" alt="FBI Command Post Command Group" style="center"/></p>
+        <h2>Command Group</h2>
+        <p>The Command Group is led by the senior law enforcement officer of the agency with jurisdiction over the incident—it may be the Police Chief, Sheriff, Incident Commander (IC), Special Agent in Charge (SAC), or in their absence, their designee.  The Command Group also includes the Crisis Management Coordinator (CMC), Media Representative, and senior decision maker representatives of partner agencies.</p>
+        <p>&nbsp;</p>
+        <p>The Police Chief, Sheriff, SAC, or his/her designee, is responsible for the overall activity relating to the critical incident or major investigation to include developing strategic goals and objectives, directing law enforcement activities, and coordinating with other agency decision makers.</p>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE OPERATIONS GROUP -->
+<div data-role="page" id="oper-group">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Operations Group</h1>
+        <p>The Operations Group is the primary group responsible for processing information and intelligence and moving the investigation to a successful conclusion. In CP/EOC floor plan diagrams, the coordinators of Intake, Investigation, and Intelligence are physically located close to one another to facilitate the rapid and continuous flow of information.</p>
+        <p>&nbsp;</p>
+        <p>In a very large CP/EOC operation, the IC will consider designating someone as the Operations Coordinator to strengthen horizontal and vertical communication.</p>
+        <p>&nbsp;</p>
+        <h2>Intake Unit</h2>
+        <p>Intake is responsible for receiving, assessing, and documenting new information. Information may come into the CP/EOC in a variety of ways, to include telephone calls, E-mails, facsimiles, mail and internal documents. The Intake Component is the central point for receiving incoming information.</p>
+        <p>&nbsp;</p>
+        <p>The Intake Unit</p>
+        <ul>
+        <li>Documents incoming information</li>
+        <li>Assesses if the information has already been reported</li>
+        <li>Assesses the relevance of the information</li>
+        <li>Disseminates the information as appropriate</li>
+        </ul>
+		<p>&nbsp;</p>
+        <p>It is imperative to continually evaluate the ability of the component to handle the flow of information and modify staffing and assignments to permit efficient receipt and assessment of incoming information. If a press conference is scheduled, additional call takers may be required to properly staff Intake so no citizen tips are missed due to an increase in call volume after the press conference.</p>
+        <p>&nbsp;</p>
+        <h2>Intelligence Unit</h2>
+        <p>Intelligence is responsible for providing intelligence requirements, collection, processing and exploitation, analysis and production, and dissemination processes that support the CP/EOC operation and the greater intelligence community.</p>
+        <p>&nbsp;</p>
+        <p>The Intelligence Unit</p>
+        <ul>
+        <li>Manages the collection, analysis, archiving and dissemination of investigative and strategic intelligence</li>
+        <li>Prepares intelligence briefs and assessments as requested or necessary</li>
+        <li>Performs the Intelligence Requirements and Collection Management (IRCM) function</li>
+        <li>Identifies and resolves any intelligence gaps</li>
+        <li>Supports the operational and tactical intelligence needs of the IC and CP/EOC operations</li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>The Intelligence Coordinator is responsible for coordinating and establishing the flow of intelligence within the CP/EOC, tracking and resolving all intelligence-related leads, and maintaining situational awareness.</p>
+        <p>&nbsp;</p>
+		<p>Situation boards are used to provide an orderly, visual display of key data to all participants. The number of situation boards depends on the nature of the incident. The following are examples of situation board topics that may be used:</p>
+        <p>&nbsp;</p>
+        <div class="boardbox">
+        <div class="half left">Subjects</div>
+        <div class="half right">Hostages</div>
+        <div class="half left">Weapons</div>
+        <div class="half right">Crisis Site</div>
+        <div class="half left">Maps/ Photos</div>
+        <div class="half right">Perimeter Locations</div>
+        <div class="half left">Deadlines</div>
+        <div class="half right">Demands</div>
+        <div class="half left">Shift Schedules</div>
+        <div class="half right">Weather</div>
+        <div class="half left">Operations Order</div>
+        <div class="half right">Chain of Command</div>
+        <div class="half left">Time Line</div>
+        <div class="half right">Directory</div>
+        <div class="half left">Briefing Schedule</div>
+        <div class="clearfix"></div>
+        </div>
+		<p>&nbsp;</p>
+        <p>Situational awareness is also maintained with the use of electronic tools such as Law Enforcement Online (LEO) Virtual Command Center (VCC), E-Sponder, and other programs.</p>
+		<p>&nbsp;</p>
+		<h2>Investigations Unit</h2>
+        <p>The Investigations Unit is responsible for the overall direction of the substantive investigation. The Investigations Unit must ensure the investigative process is thorough and appropriate, which includes overseeing the investigative support entities’ activities that are being performed on behalf of or at the direction of the agency.</p>
+        <p>&nbsp;</p>
+        <p>The Investigations Unit</p>
+        <ul>
+        <li>Reviews all information of investigative significance and briefs the Command Group regarding new developments</li>
+        <li>Ensures that leads are set and tracked and investigative results are evaluated for possible further action</li>
+        <li>Maintains the case file associated with the investigation</li></ul>
+		<p>&nbsp;</p>
+        <h2>Field Deployed Assets</h2>
+        <p>A representative of each field deployed team (special mission team) is placed in the CP/EOC to provide immediate subject matter expertise to the Command Group and the Operations Group members. These representatives should have a direct communication link with their field deployed teams and should be conversant in the terminology, tactics, techniques, and procedures of these field deployed special mission teams. They should also have access to the crisis information management system so they can retrieve information that is useful to their field deployed teams and forward the rest of the CP/EOC information provided from their field deployed team.</p>
+        <p>&nbsp;</p>
+        <p>Common field deployed teams include SWAT, Negotiators, Bomb Technicians, Evidence Collection, Surveillance, and Technical Surveillance.</p>
+        <p>&nbsp;</p>
+        <p>The Field Deployed Asset representative</p>
+		<ul>
+        <li>Acts as the coordination point between the CP/EOC and special mission team operations in the field</li>
+		<li>Must have experience in the area he/she is representing</li>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE OPERATIONS SUPPORT GROUP -->
+<div data-role="page" id="oper-supp-group">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Operations Support Group</h1>
+        <p>The Operations Support Group positions are staffed by coordinators who provide advice and assistance within their respective areas of expertise, such as Operational Medicine, Victim/Witness Coordinators, Communications, Administrative/ Logistics/Liaison and Information Management.</p>
+        <p>&nbsp;</p>
+        <h2>Consequence Management Group (EOC Only)</h2>
+        <p>Consequence Management positions are staffed by representatives from federal, military, state, local and private sector organizations and agencies with expertise in non-traditional law enforcement matters. These representatives provide recovery focused expertise in support of law enforcement activities. The Consequence Management Group will be incorporated into the EOC or the SEOC.</p>
+        <p>&nbsp;</p>
+        <p>Law enforcement managers should ensure an understanding with consequence management/recovery representatives is in place to ensure investigative information that is restricted, law enforcement sensitive, and/or subject to rules of evidence or court orders is not inadvertently released by consequence management representatives or their headquarters unaware of law enforcement dissemination restrictions.</p>
+        <p>&nbsp;</p>
+        <img src="css-images/joint-ops-center-map.png" alt="Joint Operations Center Map" class="center"/>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE TACTICAL -->
+<div data-role="page" id="tactical">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Tactical</h1>
+        <p>Law enforcement agencies must designate how and when they will obtain the assistance of tactical (SWAT) team(s) when needed.</p>
+        <p>&nbsp;</p>
+        <p>Each SWAT team must be directed by a SWAT Team Leader. The Team Leader will maintain direct tactical command of the team during all operational deployments. During operations, the SWAT Team Leader will report to the IC at the crisis site.</p>
+        <p>&nbsp;</p>
+        <ul>
+        <li>A SWAT Coordinator should be appointed as the SWAT representative in the Command Post during operations. This person may be charged with the responsibility to serve as the IC and be familiar with team capabilities.</li>
+		<li>The SWAT Coordinator should be an individual who has previously served as a SWAT member and has a good working knowledge of tactics, techniques, and procedures, but is no longer a SWAT team member</li>
+		</ul>
+        <p>&nbsp;</p>
+        <h2>Utilization of SWAT</h2>
+        <p>A raid, arrest, search warrant or other situation posing a higher-than-normal risk may necessitate the use of a SWAT team to reduce the risk to officers, innocent persons, and subjects.</p>
+        <p>&nbsp;</p>
+        <p>The determination as to whether a given situation meets “higher-than-normal risk” criteria will be made by the appropriate supervisor based upon an assessment of various factors, including the following:</p>
+        <p>&nbsp;</p>
+        <ul>
+        <li>Hostages (if any)—number, location, medical histories, etc.</li>
+        <li>Objective (crisis site)—location, defensibility, size, configuration, avenues of approach, etc.</li>
+        <li>Weapons—types, numbers, lethality</li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>The FBI recommends that SWAT team use be required if a proposed operation contains any of the following hazardous situations:</p>
+        <p>&nbsp;</p>
+        <ul>
+        <li>Suspects wanted for armed assault on an officer</li>
+        <li>Automatic weapons believed to be on the premises</li>
+        <li>Hostage believed to be at the location</li>
+        <li>Heavily barricaded location (e.g., sally port, internal fortifications, multiple gates, etc.)</li>
+        <li>Weapons of Mass Destruction believed to be on premises</li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>Additionally, the FBI suggests SWAT team use should be required when a proposed operation contains three or more of the following hazardous situations:</p>
+        <p>&nbsp;</p>
+        <ul>
+        <li>Barred doors and windows</li>
+        <li>Guard dogs</li>
+        <li>“Third Strike” subject</li>
+        <li>Violent criminal history (armed violence against public or law enforcement)</li>
+        <li>Handguns at the location</li>
+        <li>Threats by suspect against law enforcement</li>
+        <li>Countersurveillance (e.g. closed circuit TV, intrusion devices, etc.)</li>
+        <li>Warrant to be executed in a neighborhood deemed potentially volatile or non-compliant</li>
+        </ul>
+        <p>&nbsp;</p>
+		<p>If a proposed operation contains two of the hazards listed above, the FBI recommends contacting the SWAT team leader to determine if there is a need for SWAT involvement.</p>
+        <p>&nbsp;</p>
+        <p>In the event the IC chooses to exercise a tactical option, command and control of the SWAT team will pass from the IC to the Team Leader at a clearly defined point. Should the situation change the IC can halt the tactical teams at any of the phase lines. The teams can also be recalled if an extended delay is anticipated.</p>
+        <p>&nbsp;</p>
+        <h2>Phase Lines</h2>
+        <p>Phase lines are geographic locations established within the tactical operations order which are used during an assault to control the SWAT team’s movement to the crisis site. The FBI uses the following standards:</p>
+        <p>&nbsp;</p>
+        <p><strong>Phase Line Red</strong> - SWAT team’s staging/holding area.</p>
+        <p>&nbsp;</p>
+        <p><strong>Phase Line Yellow</strong> - SWAT team’s last point of cover and concealment and the point at which the SWAT Coordinator or SWAT Team Leader will request compromise authority from the IC, if appropriate for the operation.</p>
+        <p>&nbsp;</p>
+        <p><strong>Phase Line Green</strong> - SWAT team’s point of entry (breach point) into the crisis location.</p>
+        <p>&nbsp;</p>
+        <h2>Compromise Authority</h2>
+        <p>In conjunction with the Team Leader’s assumption of command and control of tactical assets, the IC must grant Compromise Authority to the TL when the situation requires it. This allows the TL to make the determination if the assault should continue or be aborted in the event the tactical elements are discovered by the subject(s) prior to reaching the planned execution point. Compromise authority is generally necessary only when hostage lives are endangered as a result of hostage takers becoming aware of an imminent assault to rescue hostages.</p>
+        <p>&nbsp;</p>
+        <h2>Tactical Reference Codes</h2>
+        <p>Various methods are used to provide a common frame of reference in reporting activity around a target location. The four sides of a structure, vehicle, or vessel are labeled with colors, letters, or numbers to designate their location.</p>
+        <p>&nbsp;</p>
+        <p>The Federal Bureau of Investigation uses colors: White (front), Black (rear), Red (right), and Green (left).</p>
+        <p>&nbsp;</p>
+        <p>The Law Enforcement Standards Board “Tactical Response” academy curriculum teaches the clockwise use of letters, starting with “A” (front), “B” (left), “C” (rear), and “D” (right).</p>
+        <p>&nbsp;</p>
+        <p>The Law Enforcement Standards Board “Tactical Response” academy curriculum teaches the clockwise use of letters, starting with “A” (front), “B” (left), “C” (rear), and “D” (right).</p>
+        <p>&nbsp;</p>
+        <img src="css-images/tactical-ref-codes.png" alt="Tactical Reference Codes Diagram" class="center"/>
+        <p>&nbsp;</p>
+        <p>Agencies may use a clockwise numbering system, starting with “1” (front), “2” (left), “3” (rear), and “4” (right).  Or, agencies may use another system.</p>
+        <p>&nbsp;</p>
+        <p>It’s vital that the SWAT Coordinator, Team Leader, and officers clearly understand whatever tactical reference code is used, and use the same terminology.</p>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE TACTICAL OPERATIONS CENTER (TOC) -->
+<div data-role="page" id="toc">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Tactical Operations Center (TOC)</h1>
+        <p>A Tactical Operations Center (TOC) is a centralized coordination unit designed for and tasked with:</p>
+        <p>&nbsp;</p>
+        <ul>
+        <li>Gathering and analyzing all tactically significant information</li>
+        <li>Coordination of information to and from tactical assets</li>
+        <li>Disseminating information to the tactical component from the CP/EOC and the Negotiations Operation Center (NOC)</li>
+        <li>Managing tactical assets at the crisis site</li>
+        <li>Supporting the overall mission</li>
+		</ul>
+        <p>&nbsp;</p>
+        <p><strong><em>It is not a Command Post</em></strong></p>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE ANALYSIS FOR A TACTICAL RESPONSE -->
+<div data-role="page" id="analysis-tr">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Analysis for a Tactical Response</h1>
+        <ul>
+        <li>What is the nature of the criminal violation?</li>
+        <li>Are there confirmed hostages?
+        <ul><li>Are the people true hostages?</li></ul></li>
+        <li>Have the subjects used force, threatened to use force or have a past record of violence?</li>
+        <li>Are there additional factors that make the situation extremely volatile or hazardous? (e.g. explosives, WMD)</li>
+        <li>Are negotiations active?</li>
+        <li>In the assessment of the negotiators, are communications with the subject(s) viable or productive?</li>
+        <li>What are the demands?</li>
+        <li>Are they reasonable or inherently dangerous?</li>
+        <li>Do you have the situation contained?</li>
+        <li>Do you have adequate intelligence to support a tactical plan?</li>
+        <li>Can the crisis site be assaulted?</li>
+        <li>Are sufficient tactical resources available?</li>
+        <li>Do they have all the necessary equipment for the breach and assault?</li>
+        <li>Are they properly trained for the prescribed operation?</li>
+        <li>Do you have the necessary communications capability to implement and control the operation?</li>
+        <li>What are the risks to hostages, subjects, innocent parties, officers, and property?</li>
+        <li>Do you have the element of surprise?</li>
+        <li>Are there any alternatives that will prevent loss of life?</li>
+		</ul>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE EMERGENCY ASSAULT PLAN -->
+<div data-role="page" id="eap">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Emergency Assault Plan</h1>
+        <p>The Emergency Assault Plan (EAP) is an immediate measure designed to regain control or stabilize a rapidly deteriorating crisis situation that poses imminent danger to the lives of innocent people. It generally lacks contingency planning, preparation, rehearsal, and full use of tactical capabilities. Consequently, execution of the EAP presents a high level of risk to all concerned. <strong><em>EAP approval authority rests with the IC.</em></strong></p>
+        <p>&nbsp;</p>
+        <p>Establish the EAP as soon as possible after the crisis occurs.</p>
+        <p>&nbsp;</p>
+        <p>Elements of the plan (who, what, when where):</p>
+        <p>&nbsp;</p>
+        <ul>
+        <li>Movement of officers to crisis site</li>
+        <li>Breaching</li>
+        <li>Securing site</li>
+        <li>Handling of hostages and subjects</li>
+		</ul>
+        <p>&nbsp;</p>
+        <h2>Initiation of the EAP:</h2>
+        <p>&nbsp;</p>
+        <ul>
+        <li>Brief assault team</li>
+        <li>Team prepares equipment</li>
+        <li>Breaching operation prepared</li>
+        <li>Update intelligence</li>
+        <li>Rehearse (if possible)</li>
+        <li>Team moves to assault position – speed is essential</li>
+        <li>Team may move to close proximity of breach point during critical events (deadlines, food deliveries, hostage release)</li>
+        <li>Rotate team for rest, food and rehearsal of deliberate plan</li>
+		</ul>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE DELIBERATE ASSAULT PLAN -->
+<div data-role="page" id="dap">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Deliberate Assault Plan</h1>
+        <p>The Deliberate Assault Plan (DAP) encompasses tactics developed to accomplish crisis resolution. Unlike the EAP, the timetable and sequence for implementation are controlled by the IC. It is characterized by intelligence driven planning, contingencies, rehearsals, modification and risk assessment.</p>
+        <p>&nbsp;</p>
+        <ul>
+        <li>Prepare and brief initial plan as soon as possible after the mission has been identified</li>
+        <li>Identify multiple breach points to ensure surprise, security and positive entry</li>
+        <li>Sniper/observer team coverage during all possible phases</li>
+        <li>Plan must completely neutralize the threat</li>
+        <li>Prevent subject(s) escape, limit potential to react</li>
+        <li>Safe evacuation of hostages and subjects</li>
+        <li>Preservation of evidence</li>
+        <li>Team actions to accommodate contingencies</li>
+        <li>Use all available intelligence and request additional IIN necessary for a complete plan</li>
+        <li>Modify existing plans to fit the crisis</li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>The DAP must reflect and support the IC strategy and it should use all possible measures to ensure full control by the IC and SWAT Team Leader. <strong><em>DAP approval authority rests with the IC.</em></strong></p>
+        <p>&nbsp;</p>
+        <p>Coordinate with negotiators to synchronize activities and support assault requirements.</p>
+        <p>&nbsp;</p>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE TACTICAL DEVICES -->
+<div data-role="page" id="tact-devices">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Tactical Devices</h1>
+        <p><em>Various tactical devices are discussed below. Agencies should give consideration to the points raised, and pre-plan the criteria for use, authorization required, and follow-up reporting requirements.</em></p>
+        <p>&nbsp;</p>
+        <h2>Diversionary Devices (Flashbangs)</h2>
+        <p>Only authorized flashbangs should be used. Flashbangs are not grenades or stun weapons. Their purpose is to distract, disorient and create an uncontrollable physiological/psychological response from the subject(s) through an audible and visual report. This diversion is utilized by the tactical team to cover their action and maintain, regain or enhance the element of surprise.</p>
+        <p>&nbsp;</p>
+        <h3>Policy:</h3>
+        <ul>
+        <li>Pre-plan whose approval is required before use</li>
+        <li>Life threatening situation</li>
+        <li>When used will reduce the risk of serious injury or death to
+		<ul><li>Hostages</li>
+        <li>Officers</li>
+        <li>Other individuals</li></ul></li>
+		<li>Deployed by officers trained in use and wearing protective clothing (eye protection, gloves)</li></ul>
+        </ul>
+        <p>&nbsp;</p>
+        <h2>Considerations</h2>
+        <ul>
+        <li>Number of people in immediate area of deployment</li>
+        <li>Age and health considerations (infants/elderly) of individuals in site</li>
+        <li>Risk to innocent parties</li>
+        <li>Presence of hazardous or combustible materials</li>
+		</ul>
+        <p>&nbsp;</p>
+        <h2>Shotgun Breaching</h2>
+        <p>Some SWAT teams do not possess explosive breaching capability. Shotgun breaching may be adopted in incidents where other mechanical breaching methods would be ineffective. Only shotgun rounds designed for breaching and approved by the agency should be utilized for this purpose.</p>
+        <p>&nbsp;</p>
+        <h3>Policy:</h3>
+        <ul>
+        <li>Pre-plan whose approval is required before use</li>
+        <li>Subject(s) pose an imminent danger of death or serious physical injury to
+        <ul><li>Hostages</li>
+        <li>Officers</li>
+        <li>Other individuals</li></ul>
+        <li>Utilized by trained personnel</li>
+        </ul>
+        <p>&nbsp;</p>
+        <h2>Considerations</h2>
+        <p>&nbsp;</p>
+        <ul>
+        <li>Number and location of person(s) inside crisis site</li>
+        <li>Factors determining risk of primary and secondary fragmentation</li>
+        <li>Potential for success using this technique</li>
+        <li>Other available breaching options (cutting torch, saw, rabbit tool, jam spreaders, ram, etc.)</li>
+        </ul>
+        <p>&nbsp;</p>
+        <h2>Tactical Gas</h2>
+        <p>Approval is needed when delivery systems other than individual aerosol dispersers are utilized. Possible chemical agents may include:</p>        
+        <p>&nbsp;</p>
+        <ul>
+        <li>Oleoresin capsicum (OC)</li>
+        <li>Orthochlorobenzalmalononitrile (CS)</li>
+        <li>Hexachlorethane (HC) smoke</li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>Delivery systems may include:</p>
+        <p>&nbsp;</p>
+        <ul>
+        <li>Aerosol OC dispenser</li>
+        <li>12 gauge shotgun and 40mm launcher</li>
+        <li>White and colored smoke grenades</li>
+        </ul>
+        <p>&nbsp;</p>
+        <h2>Restrictions:</h2>
+        <li>Pre-plan whose approval is required before use</li>
+        <li>Large aerosol OC units with lock-down actuator and/or delivery tube for SWAT use only</li>
+        <li>Pyrotechnic munitions such as projectiles, grenades, chemical smoke, etc., must only be used outdoors where danger of structural fire is reduced. Prior to use, local fire officials should be notified</li>
+        </ul>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE BOMB THREATS -->
+<div data-role="page" id="bomb-threats">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Bomb Threats</h1>
+        <p>When feasible, a bomb technician should be located in the CP/EOC to provide advice to the IC during any crisis situation involving explosives.</p>
+        <p>&nbsp;</p>
+        <h2>Bomb Threat Checklist</h2>
+        <p>Special forms are available to provide recipients of bomb threats a tool to capture critical information during an extremely stressful moment.</p>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE TRANSPORTATION CRASH/INCIDENT -->
+<div data-role="page" id="trans-crash">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Transportation Crash/Incident</h1>
+        <p>In the immediate aftermath of a transportation crash, specialized agencies may become involved. The National Transportation Safety Board (NTSB) investigates catastrophic airplane crash sites and certain rail, highway, marine and pipeline accidents. The primary NTSB point of contact will be the assigned NTSB investigator in charge. In cases of suspected criminal activity, other agencies may participate in the investigation. The Safety Board does not investigate criminal activity; once it is established that a transportation tragedy is a criminal act, a law enforcement agency becomes the lead investigative body with the NTSB providing any requested support.</p>
+        <p>&nbsp;</p>
+        <p>Checklist:</p>
+        <p>&nbsp;</p>
+        <ul>
+        <li>Establish contact with the NTSB via the NTSB Communication Center at (202)-314-6290. (24/7, non-public)</li>
+        <li>Assign an investigator to work with the NTSB team during the on scene portion of the incident</li>
+        <li>Local law enforcement agency interviews should be coordinated with the NTSB to avoid situations in which witnesses critical to the NTSB investigation are interviewed before NTSB subject matter experts have the opportunity to interview those witnesses</li>
+        <li>Once NTSB is on the scene ensure protocols for proper and thorough exchange of factual information between the NTSB and the local law enforcement agency are implemented</li>
+        <li>Ensure any public announcement (i.e. public tips, witnesses) be coordinated with the NTSB</li>
+		</ul>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE MISSING CHILD/CHILD ABDUCTION CHECKLIST -->
+<div data-role="page" id="miss-child">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Missing Child/Child Abduction Checklist</h1>
+        <p>A report of a missing child can quickly expand into a full-scale investigation and search, complete with national news coverage. Studies have shown that of those children that are abducted and murdered, 74% are killed within three hours of the abduction.</p>
+        <p>&nbsp;</p>
+        <p>The Wisconsin Department of Justice has prepared the Missing and Abducted Children – Response and Investigative Resource Guide. This comprehensive manual is available for download in the “Wisconsin Clearinghouse for Missing and Exploited Children and Adults” section of <a href="http://wilenet.org">WILENET</a>.</p>
+        <p>&nbsp;</p>
+        <p>The Response and Investigative Resource Guide is intended to be used as a training manual, procedural and response guide, and resource handbook. Its information and checklists can be quickly accessed and used by patrol officers and supervisors, and it can also serve as a refresher for experienced investigators.</p>
+        <p>&nbsp;</p>
+        <p>Consider requesting investigative assistance, crisis management expertise, and resources such as the National Center for Missing and Exploited Children (NCMEC), WisDOJ Division of Criminal Investigation (DCI), and/or the Federal Bureau of Investigation.</p>
+        <p>&nbsp;</p>
+        <p>If the facts of the missing child incident are within the guidelines, immediately activate your local, state, or regional Amber Alert. Consult <a href="http://wilenet.org">WILENET</a> for the current guidelines and necessary forms.</p>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE OFFICER INVOLVED SHOOTING INCIDENTS -->
+<div data-role="page" id="ois">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Officer Involved Shooting Incidents</h1>
+        <p>The following is an excerpt from the U.S. Department of Justice, Federal Bureau of Investigation Shooting Incident booklet published in June 2003. This checklist is intended to provide basic reminders for a supervisor at the scene of an officer-involved shooting incident.</p>
+        <p>&nbsp;</p>
+        <ul>
+        <li>Request medical assistance, if necessary, and notify dispatch</li>
+        <li>Personally coordinate the investigation until an investigator arrives on the scene</li>
+        <li>Secure the scene – establish crime/shooting scene perimeter and protect any evidence.</li>
+        <li>No statement shall be compelled from affected officer(s)</li>
+        <li>Request additional personnel as warranted</li>
+        <li>Broadcast critical information to backup/responding units</li>
+        <li>Avoid having involved officers conduct any investigation and/or interviews relevant to the shooting. Separate and remove involved officer(s) from the scene</li>
+        <li>Identify, locate, and interview all personnel and witnesses at the scene</li>
+        <li>Secure evidence</li>
+        <li>Collect weapon(s) and ammunition from the involved officer(s).
+        <ul><li>Whenever possible, provide officer(s) with replacement weapons as their weapons are seized.</li></ul></li>
+        <li>Assign an officer or close friend to the involved officer(s). This officer should act as liaison between the involved officer, his/her family, and human resources to resolve difficulties which may arise concerning insurance benefits, leave, etc. Caution assigned personnel not to become involved in routine family activities</li>
+        <li>If officer is injured, the officer’s family should be personally contacted and provided transportation with an informed officer to the treatment facility</li>
+        <li>Ensure the involved officer’s family is personally briefed as soon as practical, by officer himself/herself, if circumstances permit</li>
+        <li>In those situations where an officer is injured, locate a secluded area of the hospital where a liaison telephone can be set up and coordinated with hospital security authorities. Assign an officer to this location to coordinate the following</li>
+        <ul><li>Security and privacy of the injured officer</li>
+        <li>Media contacts through hospital public information office</li>
+        <li>Interviews with law enforcement agencies, if necessary</li>
+        <li>Visiting hours with office personnel to avoid overcrowding and uncomfortable situations</li>
+        <li>Inquiries from other agencies</li></ul></li>
+        <li>Ensure additional evidentiary items are properly secured at the hospital (e.g. clothing)</li>
+        <li>Consider interview of involved officer(s) by someone sensitized in the area of post critical incident trauma.</li>
+        <li>Every effort should be made to ensure that any statements required to be made by an officer are given after the officer has been afforded reasonable time to regain composure and is capable of understanding his/her rights</li>
+        <li>Arrange for a daily briefing of the injured officer, if necessary</li>
+        <li>Brief media personnel, being careful not to release the officer’s name</li>
+        <li>Consideration should be given as to which agency should make press releases (if/when multiple agencies are involved), whether or not the subject’s identity should be released, and whether the identity of the subject’s next of kin should be released</li>
+        <li>Keep office personnel apprised of the investigation and the condition of any injured officer(s)</li>
+        <li>Screen all phone calls at the office of the involved officer. The same precaution may be necessary at the officer’s residence</li>
+        <li>Provide appropriate security for the officer’s home and family</li>
+        <li>Ensure contact has been initiated between the involved officer(s) and the EAP representative</li>
+        <li>Receive briefing concerning post-critical incident trauma</li>
+        <li>Coordinate availability of peer support</li>
+        <li>Review Workers Compensation Benefits for questions relating to work-related illnesses and injuries</li>
+        <li>In situations where an officer has sustained damage to personal property, consult agency policy</li>
+        </ul>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE EMERGENCY POLICE SERVICES -->
+<div data-role="page" id="eps">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Emergency Police Services</h1>
+        <p>Resources may be requested from the Wis. Dept. of Military Affairs (WisDMA), Div. of Emergency Management, Emergency Police Services (EPS) program.</p>
+        <p>&nbsp;</p> 
+		<p>EPS regional coordinators may be found on the EPS website, http://emergencymanagement.wi.gov/EPS/mutual_aid_areas.asp. To request additional assets, contact the WEM Duty Officer at 800-943-0003, press 2.</p>
+        <img src="css-images/eps-area-map.png" alt="Emergency Police Services Area Map" class="center"/>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE AVIATION RESOURCES -->
+<div data-role="page" id="aviation-res">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Aviation Resources</h1>
+        <ul>
+        <li>For all Aviation Resources, call WEM’s 24-hour Duty Officer at 1-800-943-0003 ext. 2.
+        <ul><li>WI Department of Natural Resources</li>
+        <li>WI State Patrol</li>
+        <li>WI National Guard</li></ul></li>
+        <li>Law Enforcement Aviation Coalition
+        <ul><li>847-872-2131</li></ul></li>
+        </ul
+        ></div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE CANINES -->
+<div data-role="page" id="canines">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Canines</h1>
+        <p>Wisconsin Emergency Management maintains a statewide roster; the most recent edition is available in “News & Links” under the “Resources” section of <a href="http://wilenet.org">WILENET</a>.</p>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE DISPATCHERS/TELECOMMUNICATORS-->
+<div data-role="page" id="dispatch-tele">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Dispatchers/ Telecommunicators</h1>
+        <p>Wisconsin’s Telecommunicator Emergency Response Taskforce (TERT) maintains a statewide roster of trained telecommunicators available to assist dispatch centers and command posts in a crisis. TERT is requested through Wisconsin Emergency Management (WEM), and its roster and supporting documents are available on WILENET.</p>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE SWAT AND BOMB TEAMS -->
+<div data-role="page" id="swat">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>SWAT and Bomb Teams</h1>
+        <p>The Aligned Law Enforcement Response Team (ALERT) program is administered by the Office of Justice Assistance in cooperation with Wisconsin Emergency Management. It is comprised of eight regional SWAT teams and five regional bomb teams.  Requests for assistance should be directed through WEM’s Emergency Police Services (EPS) area directors.</p>
+        <p>&nbsp;</p>
+		<p>Many communities maintain local SWAT and/or EOD teams</p>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE WEAPONS OF MASS DESTRUCTION -->
+<div data-role="page" id="womd">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Weapons of Mass Destruction</h1>
+        <p>54th Civil Support Team, WI National Guard. If the local Incident Commander would like the 54th CST to assess, assist and advise them in a WMD/Hazardous Materials incident, make a request with the county Emergency Manager. The request is then routed through WEM’s Duty Officer, the on-duty Military Support Officer (MSO) and finally to the 54th's Commander. The Incident Commander can also contact the 54th’s Commander directly at 608-245-8400.</p>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE AIR AMBULANCES -->
+<div data-role="page" id="air-amb">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1>Air Ambulances</h1>
+        <ul>
+        <li>Appleton – ThedaStar: 800-236-2066</li>
+        <li>Eau Claire – Mayo One: 800-237-6822</li>
+        <li>Green Bay – Eagle III: 877-332-4533</li>
+        <li>La Crosse – MedLink AIR: 800-527-1200</li>
+        <li>Madison – Med Flight: 608-263-3258</li>
+        <li>Marshfield – Spirit Air: 800-320-4949</li>
+        <li>Milwaukee – Flight for Life: 800-344-1000</li>
+        <li>Rhinelander – Spirit Air: 800-320-4949</li>
+        <li>Rice Lake – LifeLink: 800-328-1377</li>
+        <li>Wausau – Aspirus MedEvac: 800-888-8056</li>
+        </ul>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<!-- PAGE -->
+<div data-role="page" id="acronyms">
+    <div data-role="header">
+    <header>
+        <div class="wrapper">
+        	<div id="name-and-slogan">
+           <a href="#menupage" class="btn-back left" data-rel="back" title="Go Back">ë</a>
+           <div id="logo"><img src="css-images/logo.svg" alt="Advanced Concepts for Law Enforcement Management"/></div>
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- wrapper -->
+    </header>
+    </div><!-- header -->    
+    <div data-role="content" id="mainc">
+    	<div class="wrapper">
+        <h1></h1>
+        </div>
+	</div><!-- /content -->
+    <div data-role="footer">
+    	<footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div><!-- footer -->
+</div><!-- page -->
+<!--PAGE -->
+
+<script>
+$( document ).on( "vclick", "a", function() {
+  $( this ).click();
+  });
+</script>
+</body>
+</html>

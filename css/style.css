@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Theme: Reference Guide
+Description: Training & Standards Bureau Reference Guides
+Author: */
+
+/* RESETS */
+/* ====== */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, canvas, progress {margin: 0; padding: 0; border: 0; vertical-align: baseline;}
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border: 0;margin: 0;padding: 0}
+
+article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display: block}
+
+figure{position: relative}
+figure img{width: 100%}
+
+/* COLORS */
+/* ====== */
+
+/* ORANGE: #F76842				247,104,66 */
+/* MUTED ORANGE: #C75430		199,84,48 */
+/* BURNT ORANGE: #823722		130,55,34 */
+/* TURQUOISE: #34C7C2			52,199,194 */
+/* LIGHT PEACH: #F0E5E2			240,229,226 */
+/* MID PEACH GREY: #ADA19E		173,161,158 */
+/* DARK PEACH GREY: #494443		73,68,67/
+
+/* SITE ELEMENTS */
+/* ============= */
+
+* {margin: 0; padding: 0;}
+html, body {height: 100%;}
+a {cursor: pointer; text-decoration: none; color: #F76842;}
+a:hover, a:focus {color: #823722;}
+a:active {color: #34C7C2;}
+img {border: none;}
+ul {list-style-type: none;}
+b, strong {font-family: 'brawlerregular', sans-serif; font-weight: bold;}
+i, em {font-family: 'brawlerregular', sans-serif; font-style: italic;}
+b i, b em, strong i, strong em, i b, i strong, em b, em strong {font-family: 'brawlerregular', sans-serif;}
+
+/* UNIVERSAL STYLES */
+/* ================ */
+
+html, body {background: #F0E5E2; font-size: 18px; height: 100%; font-family: 'brawlerregular', serif; line-height: 1.55em; color: #222;}
+.wrapper {width: 100%; max-width: 85%; margin: 0 auto; position: relative;}
+.left {float: left;}
+img.left {padding: .5em 1em .5em 0; display: block;}
+.right {float: right;}
+img.right {padding: .5em 0 .5em 1em; display: block;}
+.center {display: block; margin: 0 auto; position: relative;}
+img, object, embed, figure {max-width: 100%; border: none;}
+img {height: auto;}
+h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
+h1 {font-size: 1.25em;}
+h2, h3 {font-size: 1.125em;}
+h4, h5, h6 {font-size: 1.0625em;}
+ul, ol {padding: 0 0 0 .125em; margin: 0 0 0 1.25em;}
+ul li, ol li {padding: .125em 0em .125em .25em;}
+ul li ul li {list-style-type:circle;}
+ul li {list-style:disc;}
+blockquote {font-family: ; padding: .5em; font-size: 1.75em; line-height: 1.125em;}
+blockquote::before, blockquote:after {content: '\0022'; padding: 0 .5em;}
+textarea, text, textfield, input  {background: #FFF; border: ; padding: .5em; }
+.form-select {}
+.form-submit {}
+.form-submit:hover {}
+.form-submit:active {}
+*, *:after, *::before {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box}
+.clearfix {clear: both; margin: 0; padding: 0;}
+
+textarea, text, textfield, input, select  {background:linear-gradient(#F2F2F2, #F9F9F9); border:#2798A0 solid thin; padding:.5em; width:100%; margin:0 auto .25em; clear:both; -webkit-border-radius:.75em; border-radius:.75em;}
+input:focus, button:focus, textarea:focus, text:focus, textfield:focus, select:focus {outline:none; color:#8861A9;}
+select {padding:.625em .5em;}
+textarea:required, text:required, textfield:required, input:required, select:required {border:#2798A0 solid thin;}
+textarea, text, textfield, input, select {-webkit-transition: box-shadow 0.4s; transition: box-shadow 0.4s;}
+input:focus, textarea:focus, text:focus, textfield:focus, select:focus {box-shadow: none;}
+
+/* HEADER */
+/* ====== */
+
+header {padding: 1.5em 0 .25em; background: #494443; position: relative; width: 100%; text-shadow: none;}
+.ui-header {border: 0;}
+#name-and-slogan {width: 100%; vertical-align: middle;}
+#logo {max-width: 3em; margin: 0 auto; position: relative;}
+#site-name {width: 100%; display: inline-block;}
+#site-name h1 {margin: .0625em auto 0; position: relative; color: #FFF; text-align: center;}
+#site-slogan {}
+.btn-back {font-family: 'entyporegular'; padding: .0625em; content: '/00EB'; font-size: 3em; max-width: 1em; float: left; margin-top: .25em;}
+.ui-page-theme-a a, .ui-page-theme-a a:visited {color: #F76842; font-weight: normal;}
+.ui-page-theme-a a:hover, .ui-page-theme-a a:focus {color: #823722;}
+.ui-page-theme-a a:active {color: #34C7C2;}
+.info-btn {font-family: 'entyporegular'; padding: .0625em; float:right; font-size: 3em; max-width: 1em; margin-top: .25em;}
+
+/* MENU */
+/* ==== */
+
+.navbar {background: ; text-align: center; padding:0; margin: 0;}
+.navbar h4::before {content: '\00F3'; vertical-align: middle; font-family: 'entyporegular'; font-size:1.5em; padding-right: .5em;}
+.navbar li h4 {padding: .125em 0 .125em 0; border-bottom: 0;}
+.navbar ul {padding: 0; margin: 0;}
+.navbar ul li {padding: .5em .75em .5em;  border-bottom:double thin #F0E5E2; width:100%; text-align:left;}
+
+/* CONTENT */
+/* ======= */
+
+section {}
+#mainc {clear: both; margin: 0 auto; display: block; position: relative; padding: 1em 0 1em; min-height: 100%;}
+#mainc:after {content: ""; display: block;}
+.boardbox {border:2px solid #494443; display:block; padding:.5em;}
+.half {width:50%; padding:.25em; display:inline-block; vertical-align:top; border:dashed thin #34C7C2; height:4.25em; text-align:center;}
+
+/* FOOTER */
+/* ====== */
+
+footer {width: 100%; bottom: 0; clear: both; height: auto; padding: 1em 0; color: #FFF; position: relative; text-align: center; background: #34C7C2;font-size: .8em; font-weight: normal; text-shadow:none;}
+.ui-header {border: 0;}
+footer a {}
+footer a:hover {}
+footer h2 {}
+.footbox {display: inline-block; vertical-align: top; position: relative; text-align: left;}
+
+/* ICONS */
+/* ===== */
+
+/* RESPONSIVE DESIGN MEDIA QUERIES */
+/* =============================== */
+
+@media all and (max-width: 33em) {
+
+}
+
+@media all and (min-width: 33em) {
+.wrapper {max-width: 85%;}
+}
+
+@media all and (min-width: 40em) {
+
+}
+
+@media all and (min-width: 50em) {
+.wrapper {max-width: 90%;}
+}
+
+@media all and (min-width: 70em) {
+
+}
+
+@media (min-width: 80em) {
+
+}
+
+
+
+/* LUMINOSITY MEDIA QUERIES */
+/* ======================== */
+
+@media (luminosity: normal) {
+background: ;
+color: ;
+}
+
+@media (luminosity: dim) {
+background: ;
+color: ;
+}
+
+@media (luminosity: washed) {
+background: ;
+color: ;
+}
